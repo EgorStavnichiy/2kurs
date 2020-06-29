@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="egor will teach you how to cook">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>egor will teach you how to cook</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169010317-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-169010317-1');
+        </script>
+
+        <!--Подключаем шрифт-->
+
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&amp;subset=cyrillic"
+            rel="stylesheet">
+        <!--Normalize  служит для того,чтобы все стили в браузерах смотрелись одинакого-->
+        <!--Подключаем стили-->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/jquery.formstyler.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <!--Верхушка сайта-->
+
+            <div class="header__top">
+                <!--Создаем контэйнер с ссылками-->
+
+                <div class="container">
+                    <div class="header__contacts">
+                        <a class="header__phone" href="tel:+37377840900">+373 778 40 900</a>
+                        <a class="header__email"
+                            href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">egor.stavnich@gmail.com</a>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Обратная
+                            связь</a>
+                    </div>
+                </div>
+            </div>
+            <!--Шапка с менюшками-->
+
+            <div class="header__content">
+                <div class="container">
+                    <div class="header__content-inner">
+                        <!--ЛОГОТИП-->
+
+                        <div class="header__logo">
+                            <a href="#">
+                                <!--Готовить может каждый!-->
+
+                                <img src="img/LOGO2.png" alt="">
+                            </a>
+                        </div>
+                        <!--Настраиваем рабочие менюшки-->
+
+                        <nav class="menu">
+                            <div class="header__btn-menu">
+                                <span class="icon-bars"></span>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="recipes.html">Рецепты</a></li>
+                                <li><a href="cooks.html">Повара</a></li>
+                                <li><a href="me.html">О себе</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--О бо мне и младшем брате-->
+        <section class="news">
+            <div class="container">
+                <div class="news__top">
+                    <div class="news__title-box">
+                        <div class="news__title">
+                            Я и Женик
+                        </div>
+                        <div class="me_and_he">
+                            Из абрикосов варят абрикосовое варенье, из вишни — вишневое. А из плодов дерева фейхоа
+                            какое?;)
+                        </div>
+                    </div>
+                </div>
+                <div class="news__inner">
+                    <div class="news__slider">
+                        <div class="news__slider-inner">
+                            <div class="news__slider-item">
+                                <div class="news__slider-title">
+                                    БРАТ
+                                </div>
+                                <div class="news__slider-text">
+                                    «Есть друзья которых мы называем братьями, есть братья которых мы никогда не сможем
+                                    назвать друзьями…»
+                                </div>
+
+                            </div>
+                            <div class="news__slider-item">
+                                <div class="news__slider-title">
+                                    БРАТ
+                                </div>
+                                <div class="news__slider-text">
+                                    «Я хочу, чтобы мой брат был всю жизнь для меня верным другом, поэтому буду для него
+                                    верным другом уже сейчас.»
+                                </div>
+
+                            </div>
+                            <div class="news__slider-item">
+                                <div class="news__slider-title">
+                                    БРАТ
+                                </div>
+                                <div class="news__slider-text">
+                                    «Брат — это не просто четыре буквы! В этом слове много понимания, любви и заботы,
+                                    что хватит на всю жизнь.»
+                                </div>
+
+                            </div>
+                            <div class="news__slider-item">
+                                <div class="news__slider-title">
+                                    БРАТ
+                                </div>
+                                <div class="news__slider-text">
+                                    «Родители дают нам жизнь, воспитывают и прививают нам любовь. Но самый лучший
+                                    подарок, который они могут сделать — это
+                                    брат или сестра.»
+                                </div>
+
+                            </div>
+                            <div class="news__slider-item">
+                                <div class="news__slider-title">
+                                    БРАТ
+                                </div>
+                                <div class="news__slider-text">
+                                    «У меня не жизнь, а просто сказка какая—то: два брата-акробата! Осталось выяснить,
+                                    кто дурак;)»
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="news__blog">
+                        <div class="news__images">
+                            <img src="img/1.jpg" alt="">
+
+                        </div>
+                        <div class="news__blog-title">
+                            Женик
+                        </div>
+                        <div class="news__blog-text">
+                            Мой карапуз! Родился 28 августа 2012 года. Озарной парнишка. Он изменил мою жизнь в лучшую
+                            сторону.Младший любит вкусно покушать. Помню как он с бабушкой лепил вареники.Его улыбка
+                            бесценна.Я для него надежда и опора.
+                        </div>
+                    </a>
+
+                    <a class="news__blog">
+                        <div class="news__images">
+                            <img src="img/4.jpg" alt=""></div>
+                        <div class="news__blog-title">
+                            Егор
+                        </div>
+                        <div class="news__blog-text">
+                            Я сдудент ПГУ им.Т.Г.Шевченко Экономический факультета кафедры "Бизнес-информатика".
+                            Тематикой сайта послужило мое хобби "повар". Мне нравится готовить, различать запахи трав и
+                            специй. Люблю эксперементировать.
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="my_text">
+            <img src="img/italy.jpg" alt="">
+            <h1>Немного о моем увлечении</h1>
+            <p align="justify">
+                Мне кажется, что готовить еду – прекрасное занятие. Я считаю, что все любят вкусно покушать. Сытый
+                человек-счастливый человек.
+
+                Каждый ингредиент, смешиваясь с другими, делает настоящее чудо.Это просто невероятная палитра запахов и
+                вкусов.
+                Когда я смотрю на еду, мне становится интересно. Очень хочется изучить каждый её кусочек, узнать, как
+                она делается. Чем оригинальнее блюдо, тем больше оно нравится людям. Мне тоже хочется научиться
+                создавать такую красоту, такие шедевры.
+                Если бы я сейчас
+                мог это делать, то радовал бы всех вкуснятиной. Только пока что мне не удаётся создавать всё, что
+                хочется.</p>
+            <p>
+                Мама говорит, что самое важное в моей будущей профессии(программист) – не опускать руки. Если что-то не
+                получается или всё идёт не по
+                плану, не надо расстраиваться. Я знаю, что ничего не может быть идеально сразу. Для хорошего результата
+                нужно много
+                трудиться.
+                Программист одна из самых сложных профессий. Она требует внимательности, знаний тегов, знаний
+                английского языка. Это поистине очень интересно.
+
+                Повар – не чем не уступает программисту. Чтобы её освоить, нужно найти в себе силы и экспериментировать.
+                Самые вкусные и необычные блюда получаются, когда кто-то хочет, чтобы они появились. Если сильно
+                потрудиться, то можно
+                добиться высот.
+            </p>
+
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__info">
+                            <div class="footer__title">
+                                Готовьте с любовью, ешьте с аппетитом!!!
+                            </div>
+
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">
+                                Обратная связь
+                            </a>
+                            <ul class="footer__list">
+                                <li><a class="footer__phone" href="tel:+37377840900">+373 778 40 900</a></li>
+                                <li><a href="#">egor.stavnich@gmail.com</a></li>
+                                <li><a class="footer__adress" href="#">г.Тирасполь пер.Раевского 6</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__map">
+                            <iframe height="250px"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.3206197209174!2d29.582662215593782!3d46.83737797914109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c903a89c65e49d%3A0xe6eaaafcb0eb5f2b!2zUmF5ZXZza3kgTG4gNiwgVGlyYXNwb2wsINCc0L7Qu9C00LDQstC40Y8!5e0!3m2!1sru!2s!4v1591482464163!5m2!1sru!2s"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <div class="container">
+                    <div class="copy__text">
+                        ©ГОТОВИТЬ МОЖЕТ КАЖДЫЙ
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="modal">
+            <form>
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

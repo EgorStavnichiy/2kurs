@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cooks</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169010317-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-169010317-1');
+        </script>
+
+        <!--Подключаем шрифт-->
+
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&amp;subset=cyrillic"
+            rel="stylesheet">
+        <!--Normalize  служит для того,чтобы все стили в браузерах смотрелись одинакого-->
+        <!--Подключаем стили-->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/jquery.formstyler.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <!--Верхушка сайта-->
+
+            <div class="header__top">
+                <!--Создаем контэйнер с ссылками-->
+
+                <div class="container">
+                    <div class="header__contacts">
+                        <a class="header__phone" href="tel:+37377840900">+373 778 40 900</a>
+                        <a class="header__email"
+                            href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">egor.stavnich@gmail.com</a>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Обратная
+                            связь</a>
+                    </div>
+                </div>
+            </div>
+            <!--Шапка с менюшками-->
+
+            <div class="header__content">
+                <div class="container">
+                    <div class="header__content-inner">
+                        <!--ЛОГОТИП-->
+
+                        <div class="header__logo">
+                            <a href="#">
+                                <!--Готовить может каждый!-->
+
+                                <img src="img/LOGO2.png" alt="">
+                            </a>
+                        </div>
+                        <!--Настраиваем рабочие менюшки-->
+
+                        <nav class="menu">
+                            <div class="header__btn-menu">
+                                <span class="icon-bars"></span>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="recipes.html">Рецепты</a></li>
+                                <li><a href="cooks.html">Повара</a></li>
+                                <li><a href="me.html">О себе</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Слайдер-->
+
+        <section class="slider_news">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="slider__item">
+                        <div class="slider__item-content">
+                            <div class="slider__title">
+                                Не пробуют свои блюда
+                            </div>
+                            <div class="slider__text">
+                                Многие повара признаются, что со временем у них появилась некая ненависть к еде, поэтому
+                                они никогда не пробуют свои
+                                блюда на работе. Да, приготовить еду для другого человека — большое удовольствие, но
+                                никакого желания прикоснуться к
+                                созданному шедевру у повара не возникает.
+                            </div>
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-content">
+                            <div class="slider__title">
+                                Работают в опасных условиях
+                            </div>
+                            <div class="slider__text">
+                                Почти всю смену повар проводит на ногах, среди конфорок и печей, жар от которых сравним
+                                с адским пеклом. Охладиться не
+                                получится: на работе повар обязан быть одет в униформу с длинным рукавом и колпак.
+                                Добавьте к этому смены по 12 и более
+                                часов, ожоги, постоянные порезы от ножа, варикоз, экземы, боли в спине и поймете, что
+                                работа эта — очень тяжелая.
+                            </div>
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-content">
+                            <div class="slider__title">
+                                Не любят готовить дома
+                            </div>
+                            <div class="slider__text">
+                                Думаете, повара каждый день балуют семью шедеврами высокой кухни? Это миф. На самом деле
+                                они не любят готовить дома и
+                                стараются переложить эту обязанность на супругу (супруга). Кулинарного творчества им с
+                                лихвой хватает и на работе, а
+                                дома хочется отдохнуть, поэтому повара обходятся самыми простыми блюдами вроде пиццы,
+                                бутербродов и котлет.
+                            </div>
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-content">
+                            <div class="slider__title">
+                                Ненавидят звезды Мишлен
+                            </div>
+                            <div class="slider__text">
+                                Поразительно, но далеко не все шеф-повара мечтают получить заветные звезды Мишлен.
+                                Престижная награда сулит массу
+                                неприятностей: потерю клиентов, отсутствие свободы на собственной кухне, работу в режиме
+                                24/7 и постоянный стресс из-за
+                                необходимости поддерживать высокий статус заведения и выполнять абсурдные требования
+                                Красного гида. Страх потерять
+                                звезду может довести и до самоубийства, как это случилось с Бернаром Луазо.
+                                Неудивительно, что все больше шефов
+                                добровольно отказываются от когда-то вожделенной награды.
+                            </div>
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <div class="cooks_men">
+            <h1 align="center">Изветные Шеф-Повара мира</h1>
+            <h2 align="center">Энтони Бурден</h2>
+            <img src="img/Entoni-Burden-900x557.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Карьерный рост американца начинался с работы посудомойщиком. Бурден, помимо главного
+                занятия, пишет
+                художественные и
+                документальные книги. Знаток экзотики постоянно путешествует, ведет шоу «No Reservations». Зрителям по
+                душе оригинальные
+                рецепты и блистательное чувство юмора Энтони.</p>
+
+            <h2 align="center">Хестон Блюменталь</h2>
+            <img src="img/Heston-Blyumental-900x600.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Британец прославился из-за пристрастия к молекулярной кухне. Ресторатор «Жирной утки»
+                получил три звезды
+                Мишлен,
+                состояние заведения поддерживается до сих пор. Самоучка изобрел мороженое со вкусом яичницы, кашу из
+                улитки,
+                пастернаковые хлопья. Некоторые критики видят противоестественность в рецептурах Блюменталя и негативно
+                высказываются о
+                превращении им миндаля в сыр и спаржи в хлеб.</p>
+
+            <h2 align="center">Янник Аллено</h2>
+            <img src="img/YAnnik-Alleno-900x563.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Брюнет, похожий на рок-звезду, назвал себя «гостиничным шефом». Янник больше 10-ти лет
+                числился главой парижского
+                заведения Le Meurice. Сейчас кулинар творит шедевры в старинном ресторане Ledoyen. Преимущества Аллено –
+                трудолюбие,
+                ежегодное он представляет клиентам по 200 новых блюд..</p>
+
+            <h2 align="center">Вольфганг Пак</h2>
+            <img src="img/Volfgang-Pak-900x506.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Австриец унаследовал страсть к готовке от матери. На протяжении 20 лет Пак вместе с
+                помощниками
+                устраивает торжественный
+                ужин, завершающий церемонию «Оскар». В составе корпорации мужчины: поваренные книги, бренды кухонной
+                техники, кейтеринг,
+                экспресс-кафе. Вольфганг выбрал стиль фьюжн, где сочетаются разные традиции кулинарии. Главное
+                предпочтение повара с
+                доходом $75 млн – черная икра.</p>
+
+            <h2 align="center">Гордон Джеймс Рамзи</h2>
+            <img src="img/Gordon-Dzhejms-Ramzi-900x582.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Мастер хотел посвятить жизнь футболу, но планы изменила травма колена. Самый лучший повар
+                прославился
+                вспыльчивым
+                нравом, который он не раз демонстрировал участникам «Мастер шеф», «Точка кипения», «Слово на букву Ф». У
+                Рамзи 22
+                ресторана, 3 паба, а также несколько выпущенных фолиантов. В социальных сетях кулинар нещадно критикует
+                старания
+                неопытных аматоров. Прибыль шотландца $175 млн.</p>
+
+            <h2 align="center">Ален Дюкасс</h2>
+            <img src="img/Alen-Dyukass-900x533.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Француз обладатель империи модных ресторанов по всему миру. По слухам, Ален страдает
+                подозрительностью,
+                контролируя все,
+                не доверяя даже близким коллегам. В подчинении у ресторатора 1 500 человек, запись на посещение ведется
+                за 3 месяца.
+                Дюкасс говорит, что успех заведения зависит не только от продуктов, на это влияют атмосфера и дизайн
+                помещения.</p>
+
+            <h2 align="center">Мишель Брас</h2>
+            <img src="img/Mishel-Bras-900x600.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Мужчина добился славы благодаря способностям, желанию развиваться и вниманию к деталям.
+                Стиль Мишеля
+                прозвали
+                креативным, а блюда вегетарианской кухни полюбились широкой публике. В 2008 г. Брас вместе с японским
+                брендом Kai
+                разработал специальную серию ножей. Теперь француз на пенсии, делами руководит его сын Себастьян.</p>
+
+            <h2 align="center">Ферран Адриа</h2>
+            <img src="img/Ferran-Adria-900x600.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Испанский шеф-повар получил навыки во время службы в армии. Талант и упорство Феррана
+                помогли сделать
+                головокружительную
+                карьеру. В списке регалий Адрия, помимо трех звезд, «Серебряная ложка» и «Золотое сердце». Бронировать
+                столик в
+                заведении El Bulli посетителям нужно за полгода до визита.</p>
+
+            <h2 align="center">Джейми Оливер</h2>
+            <img src="img/Dzhejmi-Oliver-900x450.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Самый богатый повар в мире, состояние британца $400 млн. Джейми занимается
+                благотворительностью, учит
+                молодежь,
+                продвигает культ здорового питания. Мастер спонсирует 30 ресторанов, за социальную работу награжден
+                орденом Order of the
+                British Empire. В 1999 г. мужчине выпала честь готовить обед премьер-министру Великобритании Т. Блэру.
+            </p>
+
+            <h2 align="center">Дэвид Кинч</h2>
+            <img src="img/Devid-Kinch-900x450.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Американский повар не только управляет заведением Manresa, но и занимает пост декана
+                Кулинарного
+                института Франции. В
+                2013 г. Дэвид выпустил издание на 328 страницах, названное «Съедобное отражение». Критик Д. Рейнер дал
+                положительную
+                оценку трапезе из 26-ти блюд, приготовленной Кинчем.</p>
+
+            <h2 align="center">Рене Редзепи</h2>
+            <img src="img/Rene-Redzepi-900x525.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Датчанин прославился переосмыслением скандинавской кухни, которая, бесспорно, креативна.
+                Рене занимается
+                ферментацией и
+                сушкой, получая удачные результаты. В Noma отсутствуют винные карты, наборы из лесной дичи подают с
+                октября по декабрь.
+                Овощное ассорти с июня по сентябрь, а рыбный сет предлагается с января по июнь.</p>
+
+
+            <h2 align="center"> Нусрет Гекче</h2>
+            <img src="img/Nusret-Gekche-900x600.jpg.jpg" style="margin:0px auto 0px auto; display:block" alt="">
+            <p align="center">Знаменитый повар из Турции покорил посетителей ловкой нарезкой стейков. Первые навыки
+                работы с мясом и
+                ножами юноша
+                получил у мясника. Вскоре на Гекче обрушилось недовольство, журналист Куоззо заявил, что блюдо как
+                подметка. Жители
+                высказывали негатив по поводу санитарных норм. Среди известных личностей, которые пробовали изыски
+                кулинара – Ф.
+                Киркоров, Р. Кадыров, Ди Каприо.</p>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__info">
+                            <div class="footer__title">
+                                Готовьте с любовью, ешьте с аппетитом!!!
+                            </div>
+
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">
+                                Обратная связь
+                            </a>
+                            <ul class="footer__list">
+                                <li><a class="footer__phone" href="tel:+37377840900">+373 778 40 900</a></li>
+                                <li><a href="#">egor.stavnich@gmail.com</a></li>
+                                <li><a class="footer__adress" href="#">г.Тирасполь пер.Раевского 6</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__map">
+                            <iframe height="250px"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.3206197209174!2d29.582662215593782!3d46.83737797914109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c903a89c65e49d%3A0xe6eaaafcb0eb5f2b!2zUmF5ZXZza3kgTG4gNiwgVGlyYXNwb2wsINCc0L7Qu9C00LDQstC40Y8!5e0!3m2!1sru!2s!4v1591482464163!5m2!1sru!2s"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <div class="container">
+                    <div class="copy__text">
+                        ©ГОТОВИТЬ МОЖЕТ КАЖДЫЙ
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="modal">
+            <form>
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
